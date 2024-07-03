@@ -43,7 +43,6 @@ function handleDrop() {
             console.log("Drop zone already occupied");
             return;
         }
-
     this.appendChild(draggedPiece);
 }
 
@@ -56,7 +55,3 @@ puzzlePieces.forEach(piece => piece.addEventListener("dragstart", handleStartDra
 dropZones.forEach(zone => zone.addEventListener("dragover", handleOver));
 
 dropZones.forEach(zone => zone.addEventListener("drop", handleDrop));
-
-puzzlePieceDiv.addEventListener("dragover", handleOver);
-
-puzzlePieceDiv.addEventListener("drop", handleDrop);
