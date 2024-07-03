@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
 	<title>Drag and Drop Puzzle Game</title>
@@ -14,8 +14,10 @@
 		<p>solve the puzzle</p>
 	</header>
 	<section id="game-boards">
+        <h2 class="hidden"> Puzzle Pieces Original Containter </h2>
 		<!-- these are the draggable pieces -->
 		<div class="puzzle-pieces">
+            <h2 class="hidden"> Puzzle Pieces</h2>
 			<img src="images/topLeft0.jpg" class="puzzle-image" alt="top left piece">
 			<img src="images/topRight0.jpg" class="puzzle-image" alt="top right piece">
 			<img src="images/bottomLeft0.jpg" class="puzzle-image" alt="bottom left piece">
@@ -24,6 +26,7 @@
 
 		<!-- where we want to drop pieces, dropzone -->
 		<div class="puzzle-board">
+            <h2 class="hidden"> Puzzle Board</h2>
 			<div class="drop-zone tl"></div>
 			<div class="drop-zone tr"></div>
 			<div class="drop-zone bl"></div>
@@ -33,6 +36,7 @@
 
 	<footer>
 		<p>Click on the thumbnail to change pieces</p>
+        <h2 class="hidden"> Puzzle Backgrounds</h2>
 		<nav id="buttonHolder">
 			<img id="0" src="images/buttonZero.jpg" alt="puzzle 1">
 			<img id="1" src="images/buttonOne.jpg" alt="puzzle 2">
