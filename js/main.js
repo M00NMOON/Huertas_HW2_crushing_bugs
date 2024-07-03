@@ -16,6 +16,11 @@ function changeBGImage(event) {
     //background-image: url('../images/backGround0.jpg');
     // puzzleBoard.style.backgroundImage = `url('./images/backGround${this.id}.jpg')`;
 
+    //BUG1 --- fix starts here ---
+    puzzlePieces.forEach(piece => {
+        puzzlePieceDiv.appendChild(piece);
+    });
+
     //Method 2
     console.log(event.currentTarget.id);
     puzzleBoard.style.backgroundImage = `url('./images/backGround${event.currentTarget.id}.jpg')`;
@@ -32,7 +37,12 @@ function handleOver(e) {
 }
 
 function handleDrop() {
-
+    
+    //BUG2 --- fix starts here --- (I am going to use an if statement and return)
+        if (this.children.length > 0) {
+            console.log("Drop zone already occupied");
+            return;
+        }
 
     this.appendChild(draggedPiece);
 }
